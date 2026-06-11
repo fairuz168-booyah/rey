@@ -1,3 +1,24 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body {
+    width:100%;
+    overflow-x:hidden;
+}
+
+.container {
+    width:90%;
+    max-width:700px;
+    margin:20px auto;
+    padding:20px;
+    background-color:white;
+    border-radius:20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 body {
 background: linear-gradient(to right, #b8b597, #fffcfa);
 font-family: 'Arial', sans-serif;
@@ -11,7 +32,7 @@ padding: 20px;
 
 .container {  
     background-color: rgba(235, 166, 166, 0.8);
-    border-radius:40px;
+    border-radius: 20px;
     padding: 50px;
     max-width: 600px;
     text-align: center;
