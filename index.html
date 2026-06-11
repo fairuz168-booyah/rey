@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Happy Birthday My Boo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday My Boo!</h1>
+        <img src="picture.png" alt="our picture" class="foto-ultah">
+        <p class="pesan">
+            btw ini web pertama aku buat, jadi maaf kalau masih banyak yg kurang hehe, aku cuma pengen ngasih hadiah ulang tahun atas apa yg suka aku lakukan, semoga kamu suka yaaa <br><br>
+            <strong>Pertama kali kita deket... bukan karena rencana, tapi karena suatu hal yg tak terduga.</strong>
+            <br><br>
+            Dulu waktu awal awal deket, deket cuma chat an sama mabar roblok, ml, udah ga ada lagi.
+            <br><br>
+            Tapi sekarang, kita udah bisa mabar bareng, jalan bareng, makan bareng, nonton bareng, ketawa bareng, naik motor bareng dan masih banyak lagi hehe.
+            <br><br>
+            Ak ga nyangka bisa sampe sejauh ini, aku ga nyangka dengan segala perdebatan, masalah yg kita hadapi, kita pasti selalu ada cara untuk berkomunikasi satu sama lain.
+            <br><br>
+            Di tanggal 28 Maret 2026, aku nembak kamu buat jadi pacar aku, disana ak ga nyangka kamu mau nerimanya ehh ga perlu ak jelasin lah ya gimana nembaknya....
+            <br><br>
+            Dan saat itulah aku punya seseorang di hidupku yg bisa al andalkan dalam segala aspek (kecuali MTK, sama BAHASA INGGRIS hehe, abi jago pisan), yg bisa di ajak cerita tanpa meng apalah itu namanya hehe, intinya aku amat amat amat bersyukur banget, MY BOO Nazmira Nazmi Tiara Hakim
+        <p class="tahun">Now years 2026 and forever</p>
+    </div>
+
+    <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+        <button id="play-music" style="background-color: #ffb6c1; border: none; border-radius: 50%; width: 50px; font-size: 24px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+            🎵</button>
+    </div>
+
+    <script>
+        const audio = new Audio('lagu.mp3');
+        audio.loop = true;
+        let isPlaying = false;
+
+        const playButton = document.getElementByid('play-music');
+        playButton.addEvenlistener('click', () => {
+            if (isPlaying) {
+                audio.pause();
+                playButton.textContent = '🎵';
+            } else {
+                audio.play();
+                playButton.textContent = '⏸️';
+            }
+            isPlaying = !isPlaying;
+        });
+    </script>
+</body>
+</html>
